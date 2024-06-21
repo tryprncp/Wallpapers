@@ -1,10 +1,11 @@
 #!/bin/bash
 
-rm /usr/share/sddm/themes/Candy/backgrounds/*
-cp *.jpg /usr/share/sddm/themes/Candy/backgrounds/
+read -p "Enter theme name: " THEME
+rm /usr/share/sddm/themes/$THEME/backgrounds/*
+cp *.jpg /usr/share/sddm/themes/$THEME/backgrounds/
 
-THEME_CONF="/usr/share/sddm/themes/Candy/theme.conf"
-IMAGE_DIR="/usr/share/sddm/themes/Candy/backgrounds/"
+THEME_CONF="/usr/share/sddm/themes/$THEME/theme.conf"
+IMAGE_DIR="/usr/share/sddm/themes/$THEME/backgrounds/"
 
 image_files=""
 
