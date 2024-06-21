@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ls /usr/share/sddm/themes
 read -p "Enter theme name: " THEME
 rm /usr/share/sddm/themes/$THEME/backgrounds/*
 cp *.jpg /usr/share/sddm/themes/$THEME/backgrounds/
